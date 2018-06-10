@@ -174,9 +174,9 @@
         <script src="https://unpkg.com/vue-i18n@7.8.0/dist/vue-i18n.min.js"></script>
         <script src="i18n/es.js"></script>
         <script>
-          (function () {
+          (function (getCurrentLanguage) {
             const i18n = new VueI18n({
-              locale: 'es',
+              locale: getCurrentLanguage(),
               messages: {
                 es: esMessages,
                 en: {},
@@ -186,7 +186,19 @@
               i18n: i18n,
               el: '#content'
             });
-          })();
+          })(getCurrentLanguage);
+
+          function getCurrentLanguage () {
+            const url = window.location.href;
+            const name = 'lang';
+            const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+
+              results = regex.exec(url);
+            if (!results || !results[2]) {
+              return 'en';
+            }
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+          }
         </script>
     </body>
 </html>
