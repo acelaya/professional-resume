@@ -59,6 +59,18 @@
         <ul class="list-unstyled">
           <li>
             <h4>
+              <b>Software Developer: Adidas</b>
+              <small class="job-date">{{ $t('May 2018 - Present') }}</small>
+            </h4>
+            <div class="job-desc">
+              <ul>
+                <li>{{ $t('Software development with node.js and JS (Express and React)') }}.</li>
+                <li>{{ $t('Continuous delivery to our Kubernetes clusters') }}.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h4>
               <b>Software Architect: Sumofuturo S.L.</b>
               <small class="job-date">{{ $t('September 2016 - April 2018') }}</small>
             </h4>
@@ -177,7 +189,7 @@
     <script src="https://unpkg.com/vue-i18n@7.8.0/dist/vue-i18n.min.js"></script>
     <script src="i18n/es.js"></script>
     <script>
-      (function (getCurrentLanguage) {
+      (function () {
         const i18n = new VueI18n({
           locale: getCurrentLanguage(),
           messages: {
@@ -189,19 +201,19 @@
           i18n: i18n,
           el: '#content'
         });
-      })(getCurrentLanguage);
 
-      function getCurrentLanguage() {
-        const url = window.location.href;
-        const name = 'lang';
-        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        function getCurrentLanguage() {
+          const url = window.location.href;
+          const name = 'lang';
+          const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
 
-          results = regex.exec(url);
-        if (!results || !results[2]) {
-          return 'en';
+            results = regex.exec(url);
+          if (!results || !results[2]) {
+            return 'en';
+          }
+          return decodeURIComponent(results[2].replace(/\+/g, ' '));
         }
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-      }
+      })();
     </script>
   </body>
 </html>

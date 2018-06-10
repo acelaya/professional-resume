@@ -44,5 +44,8 @@ const esMessages = {
   'Certificate of Higher Education in IT. System administration': 'Ciclo formativo de grado superior. Administración de Sistemas Informáticos',
   'Miscellanea': 'Otros',
   'Since 2007': 'Desde 2007',
-  'Class B driver\'s license': 'Permiso de conducir clase B'
+  'Class B driver\'s license': 'Permiso de conducir clase B',
+  'May 2018 - Present': 'Mayo 2018 - Actualidad',
+  'Software development with node.js and JS (Express and React)': 'Desarrollo de software con node.js y Javascript (Express y React)',
+  'Continuous delivery to our Kubernetes clusters': 'Entrega continua sobre nuestros clusters de Kubernetes'
 };
