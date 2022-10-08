@@ -1,219 +1,253 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Alejandro Celaya Alastrué. Resume</title>
+<html lang="en">
+<head>
+    <title>Alejandro Celaya Alastrué - Resume</title>
+    <!-- Meta -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="description" content="Alejandro Celaya Alastrué - Resume">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Theme CSS -->  
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-6.css">
+</head>
 
-    <style type="text/css">
-      body {font-size: 13px; line-height: 1.3;}
-      #content {padding-left: 30px; padding-right: 30px;}
-      hr {border-color: #e5e5e5; margin: 15px 0;}
-      .glyphicon {margin-right: 5px;}
-      .my-data p {margin: 0;}
-      fieldset {margin-top: 30px;}
-      fieldset legend {text-align: center; padding-right: 15px; padding-bottom: 5px; margin-bottom: 10px; font-weight: bolder;}
-      ul {padding-left: 20px;}
-      h3 {font-weight: bolder;}
-      img.me {margin-top: 20px;}
-
-      .jobs {page-break-after: always;}
-      .job-desc {margin: 0 0 30px 20px; }
-      .job-date {line-height: 20px; float: right}
-    </style>
-  </head>
-  <body>
-
-    <div class="container" id="content">
-
-      <div class="row">
-        <div class="col-xs-3">
-          <img src="img/me.jpg" class="img-thumbnail me">
+<body>
+    <div class="wrapper mt-lg-5">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile w-100" src="assets/images/me.jpg" alt="" style="border-radius: 50%" />
+                <h1 class="name">Alejandro Celaya</h1>
+                <h3 class="tagline">Full Stack Developer</h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto:alejandrocelaya@gmail.com">alejandrocelaya@gmail.com</a></li>
+                    <li class="phone"><i class="fa-solid fa-phone"></i><a href="tel:665992819">665992819</a></li>
+                    <li class="website"><i class="fa-solid fa-globe"></i><a href="https://alejandrocelaya.blog" target="_blank">alejandrocelaya.blog</a></li>
+                    <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/alejandro-celaya-alastrue/" target="_blank">linkedin.com/in/alejandro-celaya-alastrue</a></li>
+                    <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/acelaya" target="_blank">github.com/acelaya</a></li>
+                    <li class="twitter"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/acelayaa" target="_blank">@acelayaa</a></li>
+                </ul>
+            </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                <div class="item">
+                    <h4 class="degree">Certificate of Higher Education in IT. Application development.</h4>
+                    <h5 class="meta">Zaragoza</h5>
+                        <div class="time">2008 - 2010</div>
+                </div>
+                <div class="item">
+                    <h4 class="degree">Certificate of Higher Education in IT. System administration.</h4>
+                    <h5 class="meta">Zaragoza</h5>
+                    <div class="time">2006 - 2008</div>
+                </div>
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Spanish <span class="lang-desc">(Native)</span></li>
+                    <li>English <span class="lang-desc">(Fluent)</span></li>
+                </ul>
+            </div>
+            
         </div>
-        <div class="col-xs-9">
-          <div class="text-right">
-            <h3>Alejandro Celaya Alastrué</h3>
-            <p style="margin-bottom: 0;">Full-stack developer (PHP/JS)</p>
-          </div>
-          <hr>
-          <div class="row my-data">
-            <div class="col-xs-6">
-              <p>
-                <span class="glyphicon glyphicon-home"></span>
-                C/ Lago 13, 5º Izq.<br><span class="glyphicon" style="width: 13px;"></span>&nbsp;50003 Zaragoza
-              </p>
-              <p><span class="glyphicon glyphicon-user"></span> {{ $t('Zaragoza. July the 4th, 1988') }}</p>
-            </div>
-            <div class="col-xs-6">
-              <p><span class="glyphicon glyphicon-earphone"></span> (+34) 665 992 819</p>
-              <p><span class="glyphicon glyphicon-envelope"></span> alejandro@alejandrocelaya.com</p>
-              <p><span class="glyphicon glyphicon-link"></span> www.alejandrocelaya.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        
+        <div class="main-wrapper">
+            
+            <section class="section summary-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Summary</h2>
+                <div class="summary">
+                    <p>My name is Alejandro. I'm a Full-stack engineer with more than 12 years of experience, based in Zaragoza (Spain) and currently working for adidas as a Senior Software Engineer.</p>
+                    <p>I have worked both in front and back-end, and I also feel comfortable interacting with infrastructure and cloud technologies.</p>
+                    <p>I love to create and contribute to OSS, and in the past few years I have created several projects, mostly related with web technologies. Currently, I'm mainly focused on <a href="https://shlink.io" target="_blank">Shlink</a>, a self-hosted URL shortener.</p>
+                </div>
+            </section>
+            
+            <section class="section experiences-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experience</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Senior Software Engineer</h3>
+                            <div class="time">May 2018 - Present</div>
+                        </div>
+                        <div class="company">adidas Spain, Zaragoza</div>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Development of the mobile applications backend microservices, and the product personalization platform with node.js/typescript and also React (for internal administration panels).</li>
+                            <li>Interact with kubernetes clusters and CI/CD platform.</li>
+                            <li>Maintain and extend unit and E2E tests for all services.</li>
+                            <li>Leading cross-team initiatives hand-in-hand with product ownership team.</li>
+                            <li>Leading a team of 5 (since mid 2021).</li>
+                        </ul>
+                    </div>
+                </div>
 
-      <fieldset class="jobs">
-        <legend>{{ $t('Professional experience') }}</legend>
-        <ul class="list-unstyled">
-          <li>
-            <h4>
-              <b>Software Developer: Adidas</b>
-              <small class="job-date">{{ $t('May 2018 - Present') }}</small>
-            </h4>
-            <div class="job-desc">
-              <ul>
-                <li>{{ $t('Software development with node.js and JS (Express and React)') }}.</li>
-                <li>{{ $t('Continuous delivery to our Kubernetes clusters') }}.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <h4>
-              <b>Software Architect: Sumofuturo S.L.</b>
-              <small class="job-date">{{ $t('September 2016 - April 2018') }}</small>
-            </h4>
-            <div class="job-desc">
-              <ul>
-                <li>{{ $t('Responsible of the company services design, at software architecture level') }}.</li>
-                <li>{{ $t('Software development using technologies such as PHP for the back-end, and Angular and Ionic in the front-end and mobile applications') }}. </li>
-                <li>{{ $t('Cloud infrastructure administration in AWS') }}.</li>
-                <li>{{ $t('Automated deployment and continuous integration pipelines management') }}.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <h4>
-              <b>Freelance Web developer and DevOps: Solutalia</b>
-              <small class="job-date">{{ $t('March 2017 - June 2017') }}</small>
-            </h4>
-            <div class="job-desc">
-              <ul>
-                <li>{{ $t('Maintenance and improvement of existing web applications') }}.</li>
-                <li>{{ $t('Cloud infrastructure maintenance in AWS, and deployment of existing services') }}.</li>
-                <li>{{ $t('Technical support and issue resolution') }}.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <h4>
-              <small class="job-date">{{ $t('March 2014 - July 2016') }}</small>
-              <b>Full-stack Developer: Wonnova Marketing online S.L.</b>
-            </h4>
-            <div class="job-desc">
-              <ul>
-                <li>{{ $t('Design and development of the company products (web services, SDKs, mobile apps, e-commerce, etc)') }}.</li>
-                <li>{{ $t('Web applications development in PHP with Slim Framework, Zend Framework and AngularJS') }}.</li>
-                <li>{{ $t('Cloud infrastructure administration in AWS') }}.</li>
-                <li>{{ $t('Maintenance of the automated deployment tools') }}.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <h4>
-              <small class="job-date">{{ $t('June 2010 - March 2014') }}</small>
-              <b>{{ $t('Software programmer: Calat Sistemas y Comunicaciones S.L.') }}</b>
-            </h4>
-            <div class="job-desc">
-              <ul>
-                <li>{{ $t('Custom applications development in Java and PHP') }}.</li>
-                <li>{{ $t('End-to-end project management, including requirement analysis with end client') }}.</li>
-                <li>{{ $t('End user technical support and project maintenance') }}.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <h4>
-              <b>{{ $t('System administrator: Yudigar S.L.') }}</b>
-              <small class="job-date">{{ $t('April 2008 - June 2008') }}</small>
-            </h4>
-            <div class="job-desc">
-              <ul>
-                <li>{{ $t('Internship') }}.</li>
-                <li>{{ $t('Company systems and services administration') }}.</li>
-                <li>{{ $t('End user issue resolution') }}.</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </fieldset>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Software Architect</h3>
+                            <div class="time">September 2016 - April 2018</div>
+                        </div>
+                        <div class="company">Sumofuturo, Zaragoza</div>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Responsible of the company services architecture design.</li>
+                            <li>Software development using technologies such as PHP for the back-end, and Angular and Ionic in the front-end and mobile applications.</li>
+                            <li>Cloud infrastructure administration in AWS.</li>
+                            <li>Automated deployment and continuous integration pipelines management.</li>
+                            <li>Technical lead.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Freelance Web developer and DevOps</h3>
+                            <div class="time">March 2017 - June 2017</div>
+                        </div>
+                        <div class="company">Solutalia, Zaragoza</div>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Maintenance and improvement of existing web applications.</li>
+                            <li>Cloud infrastructure maintenance in AWS, and deployment of existing services.</li>
+                            <li>Technical support and issue resolution.</li>
+                        </ul>
+                    </div>
+                </div>
 
-      <fieldset>
-        <legend>{{ $t('Technical skills') }}</legend>
-        <ul>
-          <li><span class="pull-right">{{ $t('May 2014') }}</span>Zend Framework 2 Certified Architect</li>
-          <li><span class="pull-right">{{ $t('January 2013') }}</span>Zend Certified Engineer PHP 5.3</li>
-          <li style="margin-bottom: 10px;"><span class="pull-right">{{ $t('March 2013') }}</span><i>Profesional Certificado Scrum Manager</i></li>
-          <li>{{ $t('Web applications development with PHP7, node.js, HTML5, CSS3 and Javascript') }}.</li>
-          <li>{{ $t('PHP Frameworks. Zend Expressive, Zend MVC, Symfony, Laravel, Silex, Slim...') }}</li>
-          <li>{{ $t('Javascript Frameworks. Express, React, Angular, Vue...') }}</li>
-          <li>{{ $t('Development of hybrid mobile apps with Ionic') }}.</li>
-          <li>{{ $t('Project management with agile methodologies and best practices (Scrum, XP, TDD, continuous integration, task automation, version control, refactoring, etc)') }}.</li>
-          <li>{{ $t('Linux-based operating systems management, focused on application runtime environments and development environments (virtualization, docker containers, etc)') }}.</li>
-          <li>{{ $t('Cloud systems maintenance and management (Amazon Web Services)') }}.</li>
-        </ul>
-      </fieldset>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Full-stack Developer</h3>
+                            <div class="time">March 2014 - July 2016</div>
+                        </div>
+                        <div class="company">Wonnova Marketing online, Zaragoza</div>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Design and development of the company products (web services, SDKs, mobile apps, e-commerce, etc).</li>
+                            <li>Web applications development in PHP with Slim Framework, Zend Framework and AngularJS.</li>
+                            <li>Cloud infrastructure administration in AWS.</li>
+                            <li>Maintenance of the automated deployment tools.</li>
+                        </ul>
+                    </div>
+                </div>
 
-      <fieldset>
-        <legend>{{ $t('Languages') }}</legend>
-        <ul>
-          <li>{{ $t('Spanish: native') }}.</li>
-          <li>
-            {{ $t('English: high level, both written and spoken. I\'m able to maintain conversations fluently') }}.
-            <ul>
-              <li>{{ $t('In some of my previous jobs I\'ve had english-speaking coworkers, which has allowed me to improve my knowledge and skills in this language') }}.</li>
-            </ul>
-          </li>
-        </ul>
-      </fieldset>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Software Developer</h3>
+                            <div class="time">June 2010 - February 2014</div>
+                        </div>
+                        <div class="company">Calat Sistemas y Comunicaciones, Zaragoza</div>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Custom applications development in Java and PHP.</li>
+                            <li>End-to-end project management, including requirement analysis with end client.</li>
+                            <li>End user technical support and project maintenance.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
 
-      <fieldset>
-        <legend>{{ $t('Academic training') }}</legend>
-        <ul>
-          <li><span class="pull-right">2008 - 2010</span>{{ $t('Certificate of Higher Education in IT. Application development') }}.</li>
-          <li><span class="pull-right">2006 - 2008</span>{{ $t('Certificate of Higher Education in IT. System administration') }}.</li>
-        </ul>
-      </fieldset>
+            <div class="page-break"></div>
 
-      <fieldset>
-        <legend>{{ $t('Miscellanea') }}</legend>
-        <ul>
-          <li><span class="pull-right">{{ $t('Since 2007') }}</span>{{ $t('Class B driver\'s license') }}.</li>
-        </ul>
-      </fieldset>
-
+            <section class="section projects-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projects</h2>
+                <div class="item">
+                    <span class="project-title"><a href="https://shlink.io" target="_blank">Shlink</a></span> - <span class="project-tagline">An API-first and self-hosted url shortener to serve short URLs under your own domains.</span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="https://alejandrocelaya.blog" target="_blank">alejandrocelaya.blog</a></span> - <span class="project-tagline">My personal blog, where I write about different topics around software engineering, software architecture, open source, etc.</span>
+                </div>
+            </section>
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Skills</h2>
+                <div class="skillset">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="item">
+                                <h3 class="level-title">Node.js / Javascript</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">Typescript</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">React</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">PHP</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">HTML &amp; CSS</h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item">
+                                <h3 class="level-title">Kubernetes</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">Docker</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">AWS</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">CI/CD</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">Microservices &amp; architecture</h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item">
+                                <h3 class="level-title">Leadership</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">Team player</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">Growth mindset</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">Collaboration</h3>
+                            </div>
+                            <div class="item">
+                                <h3 class="level-title">Communication</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--//skills-section-->
+            
+        </div><!--//main-body-->
     </div>
+ 
+    <footer class="footer">
+        <div class="text-center">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+<!--            <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>-->
+        </div><!--//container-->
+    </footer><!--//footer-->
+        
+</body>
+</html> 
 
-    <script src="https://unpkg.com/vue@2.5.16/dist/vue.min.js"></script>
-    <script src="https://unpkg.com/vue-i18n@7.8.0/dist/vue-i18n.min.js"></script>
-    <script src="i18n/es.js"></script>
-    <script>
-      (function () {
-        const i18n = new VueI18n({
-          locale: getCurrentLanguage(),
-          messages: {
-            es: esMessages,
-            en: {},
-          },
-        });
-        new Vue({
-          i18n: i18n,
-          el: '#content'
-        });
-
-        function getCurrentLanguage() {
-          const url = window.location.href;
-          const name = 'lang';
-          const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-
-            results = regex.exec(url);
-          if (!results || !results[2]) {
-            return 'en';
-          }
-          return decodeURIComponent(results[2].replace(/\+/g, ' '));
-        }
-      })();
-    </script>
-  </body>
-</html>
