@@ -48,6 +48,7 @@ p {
 }
 
 .sidebar-wrapper {
+  -webkit-print-color-adjust: exact;
   background: #42A8C0;
   position: absolute;
   right: 0;

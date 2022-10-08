@@ -50,6 +50,7 @@ p {
 }
 
 .sidebar-wrapper {
+  -webkit-print-color-adjust: exact;
   background: #FDA246;
   position: absolute;
   right: 0;

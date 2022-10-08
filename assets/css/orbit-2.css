@@ -50,6 +50,7 @@ p {
 }
 
 .sidebar-wrapper {
+  -webkit-print-color-adjust: exact;
   background: #4CAC9D;
   position: absolute;
   right: 0;
