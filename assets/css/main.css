@@ -3,4 +3,10 @@
         page-break-before: always;
         height: 20px;
     }
+
+    .wrapper {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
 }
